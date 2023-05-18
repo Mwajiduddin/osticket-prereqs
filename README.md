@@ -181,7 +181,9 @@ Now we need to reset the permission of the "ost-config.php" to "read only" and t
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e29.png" />
 </p>
 
-Now we will try to login in osTicket as an Admin that we created. Copy and paste this link in your browser: http://localhost/osTicket/scp/login.php, type in your credentials and you should be able to log in osTicket.
+Now we will try to login in osTicket as an Admin that we created. 
+
+Copy and paste this link in your browser: http://localhost/osTicket/scp/login.php, type in your credentials and you should be able to log in osTicket.
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e30.png" />
@@ -190,44 +192,6 @@ Now we will try to login in osTicket as an Admin that we created. Copy and paste
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e31.png" />
 </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
