@@ -44,7 +44,7 @@ Go back to osTicket site in your browser, select Continue at the bottom, and fil
 
 We're almost done with this section, we just need to clean up a bit and we start by deleting the "setup" folder that can be found from this path C:\inetpub\wwwroot\osTicket. Now we need to reset the permission of the "ost-config.php" to "read only" and this file can be found from this path C:\inetpub\wwwroot\osTicket\include, right click it, go to "Properties", click on "Advanced" on the "Security" tab, select "Everyone", hit "Edit", just leave the "Read" and "Read and Execute" boxes ticked and press Apply and OK.
 
-Now we will try to login into osTicket as an Admin that we created. So copy and paste this link in your browser: http://localhost/osTicket/scp/login.php, type in your credentials and you should be able to log in osTicket.
+Now we will try to login in osTicket as an Admin that we created. Copy and paste this link in your browser: http://localhost/osTicket/scp/login.php, type in your credentials and you should be able to log in osTicket.
 
 
 
