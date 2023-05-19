@@ -14,7 +14,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 [VM creation tutorial](https://github.com/Mwajiduddin/How-to-create-a-virtual-machine-in-Microsoft-Azure)
 
-Log in Azure, go into Virtual machines, create a new Resource group, name it, select a region, chose Windows 10 Pro as the image, select a size with atleast 2 VCPUs since we need the processing power to run the osTicket program, create a username and password, check the Licensing box at the bottom left corner, click on "Review + create" and after the validation process click "Create."
+Log in Azure, go into Virtual machines, create a new Resource group, name it, select a region, choose Windows 10 Pro as the image, select a size with atleast 2 VCPUs since we need the processing power to run the osTicket program, create a username and password, check the Licensing box at the bottom left corner, click on "Review + create" and after the validation process click "Create."
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e1.png" />
@@ -28,7 +28,7 @@ Log in Azure, go into Virtual machines, create a new Resource group, name it, se
 
 <h3>Step 2: Enabling Internet Information Services (IIS) and installing CGI, PHP Manager, and Rewrite Module in your VM</h3>
 
-Log into your Windows 10 Pro VM using Remote Desktop Connection, search "Control Panel" in the Windows search bar, click on "Programs", select "Turn Windows feature on or off", check the box next to "Internet Information Services" and expand it, expand "World Wide Web Services", expand "Application Development Features", check the CGI box and press OK. CGI install PHP Manager which is necessary for osTicket to run.
+Log into your Windows 10 Pro VM using Remote Desktop Connection, search "Control Panel" in the Windows search bar, click on "Programs", select "Turn Windows feature on or off", check the box next to "Internet Information Services" and expand it, expand "World Wide Web Services", expand "Application Development Features", check the CGI box and press OK. CGI installs PHP Manager which is necessary for osTicket to run.
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e3.png" />
@@ -60,7 +60,7 @@ Go to your VM's C:\\ path and create a new folder called "PHP." Then download [P
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e8.png" />
 </p>
 
-Extract its content into the new PHP folder by right clicking on the download folder and selecting the "Extract All" and select the path of the PHP folder you made in your C: drive. 
+Extract its content into the new PHP folder by right clicking on the download folder, selecting the "Extract All" and choosing the path of the PHP folder you made in your C: drive. 
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e9.png" />
@@ -70,7 +70,7 @@ Extract its content into the new PHP folder by right clicking on the download fo
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e10.png" />
 </p>
 
-Download and install both [Microsoft Visual C++](https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view) and [MySQL Server](https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view). When installing MySQL Server, select the "Typical" setup and launch it after installing. When launching, select the "Standard Configuration" option and proceed next to create  your root password and then finish installing MySQL Server. 
+Download and install both [Microsoft Visual C++](https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view) and [MySQL Server](https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view). When installing MySQL Server, select the "Typical" setup and launch it after installing. When launching, select the "Standard Configuration" option, proceed next to create your root password (keep it simple) and then finish installing MySQL Server. 
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e11.png" />
@@ -84,9 +84,9 @@ Download and install both [Microsoft Visual C++](https://drive.google.com/file/d
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e13.png" />
 </p>
  
- <h3>Step 4: Register PHP in IIS and downloading osTicket</h3>
+<h3>Step 4: Registering PHP in IIS and downloading osTicket</h3>
 
-Search up "IIS" in the Windows search bar and run it as adminstrator, click on "PHP Manager", then click on "Register new PHP version", select the path of php-cgi.exe is located then restart IIS.
+Search up "IIS" in the Windows search bar, run it as adminstrator, click on "PHP Manager", then click on "Register new PHP version", select the path of where php-cgi.exe is located then restart IIS.
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e14.png" />
@@ -102,13 +102,13 @@ Search up "IIS" in the Windows search bar and run it as adminstrator, click on "
 </p>
 
 
-Now [download osTicket](https://drive.google.com/file/d/1VeVXKlzHDRjeaVUL99ptq7qYbrbXdFxJ/view) and once done copy the "upload" folder inside the osTicket download folder to this path C:\inetpub\wwwroot then rename the "upload" folder to "osTicket" and go back to IIS and restart it.
+Now [download osTicket](https://drive.google.com/file/d/1VeVXKlzHDRjeaVUL99ptq7qYbrbXdFxJ/view), once done copy the "upload" folder inside the osTicket download folder to this path C:\inetpub\wwwroot then rename the "upload" folder to "osTicket", go back to IIS and restart it.
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e17.png" />
 </p>
 
-Then click on the bottom arrow underneath "Sites" and "Default Web Site", select the osTicket folder and click on "Browse*:80(http)" where you will be prompted by the osTicket website. 
+Then click on the bottom arrow underneath "Sites" and "Default Web Site", select the osTicket folder and click on "Browse*:80(http)" where you will be prompted to the osTicket website on your web browser. 
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e18.png" />
@@ -116,7 +116,7 @@ Then click on the bottom arrow underneath "Sites" and "Default Web Site", select
 
 <h3>Step 4: Enabling extentions on osTicket, disabling Inheritance and enabling Permissions</h3>
 
-Go back to IIS, select "PHP Manager" in the osTicket folder, click on "Enable or disable an extention" at the bottom, then enable "php_imap.dll", "php_intl.dll", "php_opcache.dll" by selecting the file and click on "Enable" at the top right corner and now refresh the osTicket website in your browser.
+Go back to IIS, select "PHP Manager" in the osTicket folder, click on "Enable or disable an extention" at the bottom, then enable "php_imap.dll", "php_intl.dll", "php_opcache.dll" by selecting the file, clicking on "Enable" at the top right corner and now refresh the osTicket website in your browser.
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e19.png" />
@@ -128,7 +128,7 @@ Go back to IIS, select "PHP Manager" in the osTicket folder, click on "Enable or
 
 
 
-After that go to C:\inetpub\wwwroot\osTicket\include and rename the "ost-sampleconfig.php" to "ost-config.php". Then right click on that file, go to Properties, select "Advanced" in the "Security" tab, click on "Disable Inheritance" -> "Remove all inherited permissions from this object", click on "Add" -> "Select a principal", type in "everyone" in the box, click on "Check Names" and OK. Tick the box "Full Control" then hit "Apply" and OK.
+After that go to C:\inetpub\wwwroot\osTicket\include, rename the "ost-sampleconfig.php" to "ost-config.php". Then right click on that file, go to Properties, select "Advanced" in the "Security" tab, click on "Disable Inheritance" -> "Remove all inherited permissions from this object", click on "Add" -> "Select a principal", type in "everyone" in the box, click "Check Names" and OK. Tick the box "Full Control" then hit "Apply" and OK.
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e21.png" />
@@ -157,7 +157,7 @@ Download and install [HeidiSQL](https://docs.google.com/document/d/1WovrX2DaS9xk
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e25.png" />
 </p>
 
-Right click it "Unnamed", hover to "Create new", select "Database", name it "osTicket" and press OK. Now we can fill in the last portion of the osTicket website, remember our MySQL username is "root", click on "Install Now" and now you've successfully installed osTicket!
+Right click "Unnamed", hover to "Create new", select "Database", name it "osTicket" and press OK. Now we can fill in the last portion of the osTicket website, remember our MySQL username is "root", click on "Install Now" and now you've successfully installed osTicket!
 
 <p align="center">
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e26.png" />
