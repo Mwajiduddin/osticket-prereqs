@@ -8,7 +8,7 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Tutorial Guideline</h2>
+<h2>Tutorial Guidelines</h2>
 
 <h3>Step 1: Creating a virtual machine</h3>
 
