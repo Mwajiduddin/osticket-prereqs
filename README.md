@@ -193,7 +193,7 @@ Copy and paste this link in your browser: http://localhost/osTicket/scp/login.ph
 <img src="https://github.com/Mwajiduddin/Mwajiduddin/blob/main/images/e31.png" />
 </p>
 
-Don't delete your virtual machine just yet as the next tutorial continues from this point on 
+  >**Note**: *Don't delete your virtual machine right now as the next tutorial continues on from this point.*
 
 
 
