@@ -4,7 +4,7 @@
 <img src="https://i.imgur.com/Clzj7Xs.png"/>
 </p>
 
-<h1>Overview</h1>
+<h2>Overview</h2>
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
